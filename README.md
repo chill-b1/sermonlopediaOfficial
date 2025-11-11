@@ -32,19 +32,13 @@ Follow these steps to get Wiki.js running on your local machine.
 **IF YOU RECEIVE AN ERROR WHILE RUNNING `npm install` in VS Code, follow Step 6.**
 
 6.  **Temporarily Change PowerShell Execution Policy:**
-    * **a) Open PowerShell as Administrator:**
-        * Close the integrated terminal in VS Code.
-        * Search for **"Windows PowerShell"** in your Windows search bar.
-        * Right-click on it and select **"Run as administrator."**
-    * **b) Set the Policy to `RemoteSigned` for the current session:**
-        * Run the command below. The `-Scope Process` is crucial as it only changes the policy for the **current, single PowerShell session**, reverting the change when you close the window.
+    * **a) Run this in VSCode terminal:**
         ```powershell
         Set-ExecutionPolicy RemoteSigned -Scope Process
         ```
-    * **c) Confirm the Change:**
+    * **b) Confirm the Change:**
         * PowerShell may ask you to confirm. Press **`Y`** (for Yes) and then **`Enter`**.
-    * **d) Re-run `npm install` in VS Code:**
-        * Go back to VS Code and open a new terminal.
+    * **c) Re-run `npm install` in VS Code:**
         * Run the command again:
             ```bash
             npm install
