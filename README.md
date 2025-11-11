@@ -68,4 +68,4 @@ Follow these steps to get Wiki.js running on your local machine.
     docker compose up --build
     ```
 10. **Access the Wiki:**
-    * Navigate to **`http://localhost:3000`** in your web browser. You will be at the website, already signed into the administrator account.
+    * Navigate to **`http://localhost:3000`** in your web browser. You will be at the website, sign into a superUser or admin account to edit things.
